@@ -6,4 +6,4 @@ Thanks for visiting Corostats.
 
 ## Description
 
-Corostats is an Android Application which shows current Statistics and Information about the COVID-19 crisis
+Corostats is an Android application which shows current statistics and information about the COVID-19 crisis
