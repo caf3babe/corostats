@@ -40,9 +40,14 @@ class StatsFragment : Fragment() {
     private fun bindUI(generalCases: GeneralCases?) {
         if (generalCases != null) {
             val deathCasesTextView : TextView = requireView().findViewById<TextView>(
-                R.id.cardValue
+                R.id.deathCasesValue
             )
             deathCasesTextView.text = generalCases.data.deathCases
+
+            val totalCasesTextView : TextView = requireView().findViewById<TextView>(
+                R.id.totalCasesValue
+            )
+            totalCasesTextView.text = generalCases.data.totalCases
         }
     }
 

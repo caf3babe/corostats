@@ -3,7 +3,8 @@
     <string name="text_feed">Newsfeed</string>
     <string name="text_stats">Statistics</string>
     <string name="text_about">About</string>
-    <string name="title">Death Cases</string>
-    <string name="value">loading ... </string>
+    <string name="deathCaseTitle">Death Cases</string>
+    <string name="loading">loading ... </string>
     <string name="image">Tombstone</string>
+    <string name="totalCaseTitle">Total Cases</string>
 </resources>
