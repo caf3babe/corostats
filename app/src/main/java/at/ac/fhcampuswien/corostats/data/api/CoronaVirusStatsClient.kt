@@ -14,16 +14,28 @@ const val BASE_URL = "https://corona-virus-stats.herokuapp.com/api/v1/cases/gene
 object CoronaVirusStatsClient {
     fun getClient(): CoronaVirusStatsInterface {
         val requestInterceptor = Interceptor { chain ->
-            val url: HttpUrl = chain.request().url().newBuilder().build()
-
-            val request: Request = chain.request().newBuilder().url(url).build()
-
+            val url: HttpUrl = chain.request()
+                .url()
+                .newBuilder()
+                .build()
+            val request: Request = chain.request()
+                .newBuilder()
+                .url(url)
+                .build()
             return@Interceptor chain.proceed(request)
         }
 
-        val okHttpClient: OkHttpClient = OkHttpClient.Builder().addInterceptor(requestInterceptor).connectTimeout(3, TimeUnit.SECONDS).build()
+        val okHttpClient: OkHttpClient = OkHttpClient.Builder()
+            .addInterceptor(requestInterceptor)
+            .connectTimeout(3, TimeUnit.SECONDS).build()
 
 
-        return Retrofit.Builder().client(okHttpClient).baseUrl(BASE_URL).addCallAdapterFactory(RxJava2CallAdapterFactory.create()).addConverterFactory(GsonConverterFactory.create()).build().create(CoronaVirusStatsInterface::class.java)
+        return Retrofit.Builder()
+            .client(okHttpClient)
+            .baseUrl(BASE_URL)
+            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(CoronaVirusStatsInterface::class.java)
     }
 }

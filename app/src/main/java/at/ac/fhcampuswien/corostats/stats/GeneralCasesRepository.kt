@@ -20,7 +20,7 @@ class GeneralCasesRepository (private val apiService: CoronaVirusStatsInterface)
         return coronaVirusStatsNetworkDataSource.downloadedCoronaVirusStats
     }
 
-    fun getGeneralStatsNetworkStaet(): LiveData<NetworkState> {
+    fun getGeneralStatsNetworkState(): LiveData<NetworkState> {
         return coronaVirusStatsNetworkDataSource.networkState
     }
 }

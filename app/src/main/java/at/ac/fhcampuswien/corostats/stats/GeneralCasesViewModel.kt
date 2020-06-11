@@ -15,7 +15,7 @@ class GeneralCasesViewModel (private val generalCasesRepository : GeneralCasesRe
     }
 
     val networkState : LiveData<NetworkState> by lazy {
-        generalCasesRepository.getGeneralStatsNetworkStaet()
+        generalCasesRepository.getGeneralStatsNetworkState()
     }
 
     override fun onCleared() {

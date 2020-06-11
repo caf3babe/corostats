@@ -23,27 +23,24 @@ class StatsFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
+        val view : View = inflater.inflate(R.layout.fragment_stats, container, false)
         val apiService : CoronaVirusStatsInterface = CoronaVirusStatsClient.getClient()
         generalCasesRepository = GeneralCasesRepository(apiService)
-
         viewModel = getViewModel()
-
         viewModel.generalCases.observe(viewLifecycleOwner, Observer {
             bindUI(it)
         })
-
         viewModel.networkState.observe(viewLifecycleOwner, Observer{
             //TODO("Not yet implemented ")
         })
-
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_stats, container, false)
+        return view
     }
 
     private fun bindUI(generalCases: GeneralCases?) {
         if (generalCases != null) {
             val deathCasesTextView : TextView = requireView().findViewById<TextView>(
-                R.id.deathCases
+                R.id.cardValue
             )
             deathCasesTextView.text = generalCases.data.deathCases
         }
