@@ -3,6 +3,7 @@ package at.ac.fhcampuswien.corostats
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import at.ac.fhcampuswien.corostats.stats.StatsFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), NavigationHost {
@@ -14,7 +15,9 @@ class MainActivity : AppCompatActivity(), NavigationHost {
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.container, NewsFragment())
+                .add(R.id.container,
+                    NewsFragment()
+                )
                 .commit()
         }
 

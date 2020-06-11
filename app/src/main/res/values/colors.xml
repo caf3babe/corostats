@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#232F34</color>
     <color name="colorAccent">#4A6572</color>
     <color name="colorSecondary">#344955</color>
+    <color name="gridBackgroundColor">#4B4646</color>
 </resources>

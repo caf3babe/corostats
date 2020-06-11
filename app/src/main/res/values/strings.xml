@@ -3,4 +3,7 @@
     <string name="text_feed">Newsfeed</string>
     <string name="text_stats">Statistics</string>
     <string name="text_about">About</string>
+    <string name="title">Death Cases</string>
+    <string name="value">wird geladen</string>
+    <string name="image">Tomberstone</string>
 </resources>
