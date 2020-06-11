@@ -3,16 +3,16 @@
     <item
         android:id="@+id/page_1"
         android:enabled="true"
-        android:icon="@drawable/icon_1"
-        android:title="@string/text_label_1"/>
+        android:icon="@drawable/icon_feed"
+        android:title="@string/text_feed"/>
     <item
         android:id="@+id/page_2"
         android:enabled="true"
-        android:icon="@drawable/icon_1"
-        android:title="@string/text_label_1"/>
+        android:icon="@drawable/icon_stats"
+        android:title="@string/text_stats"/>
     <item
         android:id="@+id/page_3"
         android:enabled="true"
-        android:icon="@drawable/icon_1"
-        android:title="@string/text_label_1"/>
+        android:icon="@drawable/icon_about"
+        android:title="@string/text_about"/>
 </menu>
