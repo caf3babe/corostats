@@ -29,7 +29,7 @@ android {
 
 dependencies {
     // start added by nichil
-    api 'com.google.android.material:material:1.1.0-alpha06'
+    implementation 'com.google.android.material:material:1.2.0-beta01'
     // end added by nichil
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
