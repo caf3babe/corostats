@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/page_1"
+        android:id="@+id/page_feed"
         android:enabled="true"
         android:icon="@drawable/icon_feed"
         android:title="@string/text_feed"/>
     <item
-        android:id="@+id/page_2"
+        android:id="@+id/page_stats"
         android:enabled="true"
         android:icon="@drawable/icon_stats"
         android:title="@string/text_stats"/>
     <item
-        android:id="@+id/page_3"
+        android:id="@+id/page_about"
         android:enabled="true"
         android:icon="@drawable/icon_about"
         android:title="@string/text_about"/>

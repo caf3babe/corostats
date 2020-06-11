@@ -2,6 +2,7 @@ package at.ac.fhcampuswien.corostats
 
 import androidx.fragment.app.Fragment
 
+
 /**
  * A host (typically an `Activity`} that can display fragments and knows how to respond to
  * navigation events.
