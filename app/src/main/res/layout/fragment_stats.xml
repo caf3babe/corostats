@@ -12,6 +12,5 @@
         <include layout="@layout/card_total_cases"/>
         <include layout="@layout/card_death_cases"/>
     </LinearLayout>
-
 </ScrollView>
 
