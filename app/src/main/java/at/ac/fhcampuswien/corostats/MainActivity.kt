@@ -3,7 +3,7 @@ package at.ac.fhcampuswien.corostats
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import at.ac.fhcampuswien.corostats.stats.StatsFragment
+import at.ac.fhcampuswien.corostats.stats.StatisticFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), NavigationHost {
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             when (item.itemId) {
                 R.id.page_stats -> {
                     // Respond to navigation item 1 click
-                    navigateTo(StatsFragment(), false) // Navigate to the next Fragment)
+                    navigateTo(StatisticFragment(), false) // Navigate to the next Fragment)
                     true
                 }
                 R.id.page_feed -> {

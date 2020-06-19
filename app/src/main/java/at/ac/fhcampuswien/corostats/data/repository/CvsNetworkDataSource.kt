@@ -3,21 +3,20 @@ package at.ac.fhcampuswien.corostats.data.repository
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import at.ac.fhcampuswien.corostats.data.api.CoronaVirusStatsInterface
-import at.ac.fhcampuswien.corostats.data.repository.NetworkState
-import at.ac.fhcampuswien.corostats.data.vo.GeneralCases
+import at.ac.fhcampuswien.corostats.data.api.CvsInterface
+import at.ac.fhcampuswien.corostats.data.vo.StatsResponse
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import java.lang.Exception
 
-class CoronaVirusStatsNetworkDataSource(private val apiService: CoronaVirusStatsInterface, private val compositeDisposable: CompositeDisposable) {
+class CvsNetworkDataSource(private val apiService: CvsInterface, private val compositeDisposable: CompositeDisposable) {
     private val _networkState = MutableLiveData<NetworkState>()
     val networkState: LiveData<NetworkState>
     get() = _networkState
 
 
-    private val _downloadedCoronaVirusStats = MutableLiveData<GeneralCases>()
-    val downloadedCoronaVirusStats: LiveData<GeneralCases>
+    private val _downloadedCoronaVirusStats = MutableLiveData<StatsResponse>()
+    val downloadedCoronaVirusStats: LiveData<StatsResponse>
     get() = _downloadedCoronaVirusStats
 
     fun fetchCoronaVirusStats(){

@@ -3,7 +3,7 @@ package at.ac.fhcampuswien.corostats.data.vo
 
 import com.google.gson.annotations.SerializedName
 
-data class GeneralCasesData(
+data class Statistic(
     @SerializedName("active_cases_critical_percentage")
     val activeCasesCriticalPercentage: String,
     @SerializedName("active_cases_mild_percentage")

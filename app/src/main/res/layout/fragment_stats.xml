@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".stats.StatsFragment">
-    <LinearLayout
-        android:orientation="vertical"
+    tools:context=".stats.StatisticFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stats_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <include layout="@layout/card_total_cases"/>
-        <include layout="@layout/card_death_cases"/>
-    </LinearLayout>
-</ScrollView>
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -36,14 +36,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:text="Datasources used">
+        android:text="Summary of used datasources">
     </TextView>
     <TextView
         android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:text="We used blah blah and blah and not to forget blah ! ">
+        android:text="Statistics are from \nhttps://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats">
     </TextView>
 </LinearLayout>
 </ScrollView>

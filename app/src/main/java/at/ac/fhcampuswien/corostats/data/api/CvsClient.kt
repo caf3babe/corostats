@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit
 const val BASE_URL = "https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats/"
 
 object CoronaVirusStatsClient {
-    fun getClient(): CoronaVirusStatsInterface {
+    fun getClient(): CvsInterface {
         val requestInterceptor = Interceptor { chain ->
             val url: HttpUrl = chain.request()
                 .url()
@@ -36,6 +36,6 @@ object CoronaVirusStatsClient {
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(CoronaVirusStatsInterface::class.java)
+            .create(CvsInterface::class.java)
     }
 }
