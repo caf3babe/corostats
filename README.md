@@ -7,3 +7,12 @@ Thanks for visiting Corostats.
 ## Description
 
 Corostats is an Android application which shows current statistics and information about the COVID-19 crisis
+
+
+## Get started with the apk
+
+Load it on your Android device and install it.
+Tap to Corostats Appicon and browse through statistics.
+There are two tabs each showing either numeric statistics or graphical statistics.
+To find more about us and the used datasources hit the About tab.
+
